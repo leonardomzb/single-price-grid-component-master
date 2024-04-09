@@ -1,0 +1,134 @@
+:root{
+  --clr-Cyan: hsl(179, 62%, 43%);
+  --clr-lightcyan: hsl(178,48%,52%);
+  --clr-BrightYellow: hsl(71, 73%, 54%);
+
+  --clr-LightGray: hsl(204, 43%, 93%);
+  --clr-GrayishBlue: hsl(218, 22%, 67%);
+  --clr-white: hsl(0,100%,100%);
+
+  --ff-base: "Karla", sans-serif;
+
+  --fs-base: 1rem;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+  
+body{
+  background-color: var(--clr-LightGray);
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  display: grid;
+  place-content: center;
+}
+
+h1{
+  font-size: 1.75rem;
+  font-weight: var(--fw-bold);
+}
+
+h2{
+  font-size: 1.25rem;
+  font-weight: var(--fw-bold);
+}
+
+.container{
+  width: 640px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.header{
+  display: grid;
+  gap: 1rem;
+  background-color: var(--clr-white);
+  padding: 2.5rem;
+}
+
+.header h1{
+  color: var(--clr-Cyan);
+}
+.header h2{
+  color: var(--clr-BrightYellow);
+}
+.header p{
+  color: var(--clr-GrayishBlue);
+}
+
+
+.content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sub-info{
+  display: grid;
+  color: var(--clr-white);
+  background-color: var(--clr-Cyan);
+  padding: 2.5rem;
+}
+
+.flex-util{
+  display: flex;
+  gap:  1rem;
+  align-items: center;
+}
+
+
+.flex-util h3{
+  font-size: 2rem;
+  font-weight: var(--fw-bold);
+  color: var(--clr-white);
+}
+
+.flex-util p{
+  color: var(--clr-LightGray)
+}
+
+.button{
+  border: none;
+  background-color: var(--clr-BrightYellow);
+  color: var(--clr-white);
+  font-weight: var(--fw-bold);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+.general-info{
+  display: grid;
+  gap: 1rem;
+  color: var(--clr-white);
+  background-color: var(--clr-lightcyan);
+  padding: 2.5rem;
+}
+
+.general-info p{
+  color: var(--clr-LightGray);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 425px) {
+  
+  body{
+    font-size: 0.875rem;
+  }
+
+  .header h1{
+    font-size: 1.25rem;
+  }
+  
+  .header h2{
+    font-size: 0.938rem;
+  }
+
+  .container{
+    width: 310px;
+  }
+  .content{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+}
